@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilos.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;600&display=swap" rel="stylesheet">
+    <title>Landing Page</title>
+</head>
+
+<body>
+    <header>
+        <nav class="nav" id="inicio">
+            <ul class="nav-container">
+                <li class="nav-item"><a href="#inicio">Inicio</a></li>
+                <li class="nav-item"><a href="#galeria">Galeria</a></li>
+                <li class="nav-item"><a href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="fondo"><img src="./img/imagen1.jpg" alt=""></div>
+    <main>
+        <h2 class="titulo-principal">Bienvenido!</h2>
+        <h3 class="subtitulo-principal">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consectetur, explicabo
+            eum blanditiis sit quis officia pariatur unde nulla sed provident.</h3>
+    </main>
+    <div class="divisor"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+            <path class="divisor-imagen" fill="#eee" fill-opacity="1" d="M0,64L1440,288L1440,320L0,320Z"></path>
+        </svg></div>
+    <section class="galeria" id="galeria">
+        <h2 class="galeria-titulo">Galeria</h2>
+        <div class="galeria-contenedor">
+            <img class="galeria-imagen" src="./img/imagen1.jpg" alt="">
+            <img class="galeria-imagen" src="./img/imagen1.jpg" alt="">
+            <img class="galeria-imagen" src="./img/imagen1.jpg" alt="">
+            <img class="galeria-imagen" src="./img/imagen1.jpg" alt="">
+            <img class="galeria-imagen" src="./img/imagen1.jpg" alt="">
+            <img class="galeria-imagen" src="./img/imagen1.jpg" alt="">
+        </div>
+    </section>
+    <section class="contacto" id="contacto">
+        <div class="contacto-contenedor">
+            <h3 class="contacto-titulo">Aca podes contactarte</h3>
+            <form class="contacto-formulario">
+                <label for="nombre">Nombre</label>
+                <input class="contacto-formulario__caja-texto" type="text" name="form" id="nombre">
+                <label for="email">Email</label>
+                <input class="contacto-formulario__caja-texto" type="email" name="form" id="email">
+                <label for="mensaje">Mensaje</label>
+                <input class="contacto-formulario__caja-texto" type="text" name="form" id="mensaje">
+                <input class="contacto-formulario__boton" type="submit" name="form" value="Enviar">
+            </form>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <ul class="footer-nav">
+            <li class="footer-nav__item"><a href="#inicio">Inicio</a></li>
+            <li class="footer-nav__item"><a href="#galeria">Galeria</a></li>
+            <li class="footer-nav__item"><a href="#contacto">Contacto</a></li>
+        </ul>
+        <h4 class="footer-copy">Todos los derechos reservados | Gongh95</h4>
+    </footer>
+</body>
+
+</html>

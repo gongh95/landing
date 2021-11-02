@@ -1,0 +1,249 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+ 
+:root {
+    --violeta-titulo: #5656bb;
+    --gris-titulo: #d3d3f0;
+}
+
+html {
+    scroll-behavior: smooth;
+    -webkit-scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    width: 100%;
+}
+
+.nav-container {
+    /* poner flex en media */
+    display: none;
+    z-index: 50;
+    position: fixed;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    background: #999;
+    width: 100%;
+    height: 60px;
+    padding: 0px 20px;
+}
+
+li {
+    list-style: none;
+}
+
+.nav-item > a {
+    font-size: 1.3em;
+    font-weight: 600;
+    color: #fff;
+    text-decoration: none;
+}
+
+main {
+    top: 60px;
+    display: flex;
+    align-content: center;
+    flex-flow: column wrap
+}
+
+.fondo {
+    background: #CCF2F4;
+    width: 100%;
+    height: 800px;
+    position: fixed;
+    z-index: -20;
+}
+
+.fondo > img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+
+.titulo-principal {
+    color: var(--violeta-titulo);
+    text-shadow: 0px 0px 5px var(--violeta-titulo), 0px 0px 5px var(--violeta-titulo);
+    padding: 30px 0px 20px 0px;
+    align-self: center;
+    flex-grow: 3;
+    font-size: 2.5em;
+    font-weight: 700;
+}
+
+.subtitulo-principal {
+    color: bisque;
+    flex-grow: 1;
+    padding: 10px;
+    width: 90%;
+    max-width: 400px;
+    font-size: 1.2em;
+    font-weight: 300;
+    background: #676767;
+}
+
+.divisor {
+    position: relative;
+    margin-bottom: -7px;
+}
+
+.galeria-titulo {
+    font-size: 3.3rem;
+    color: #49e;
+    text-align: center;
+    text-shadow: 0px 0px 6px #49e, 0px 0px 2px #49e;
+    padding-bottom: 30px;
+}
+
+.galeria {
+    position: relative;
+    /* top:-10px; */
+    height: auto;
+    background: #eee;
+}
+
+.galeria-contenedor {
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.galeria-imagen {
+    width: 250px;
+    box-shadow: 0px 0px 15px #000;
+    margin: 10px;
+    transition: transform .3s ease;
+}
+
+.contacto {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    background: #eee;
+    padding-top: 30px;
+}
+
+.contacto-contenedor {
+    width: 350px;
+}
+
+.contacto-titulo {
+    padding: 20px;
+    width: 100%;
+    font-size: 2.1rem;
+    color: #49e;
+    text-align: center;
+}
+
+.contacto-formulario {
+    padding: 20px 0px;
+    background: chocolate;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-content: center;
+}
+
+label {
+    font-weight: 600;
+    margin-bottom: 5px;
+    text-align: center;
+    font-size: 1.3em;
+}
+
+.contacto-formulario__caja-texto {
+    font-weight: 600;
+    border: none;
+    margin-bottom: 10px;
+    padding: 10px;
+}
+
+.contacto-formulario__boton {
+    border: none;
+    padding: 10px;
+    background: #5656bb;
+    color: #000;
+    font-weight: 700;
+    font-size: 20px;
+}
+
+.contacto-formulario__caja-texto:focus {
+    outline: none;
+    background: #ddd;
+}
+
+.footer {
+    background: #676767;
+    width: 100%;
+    height: 60vh;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-flow: column wrap;
+}
+
+.footer-nav {
+    text-align: center;
+    align-self: center;
+    width: 50%;
+    height: 70px;
+}
+
+.footer-nav__item > a {
+    position: relative;
+    height: 70px;
+    color: #fff;
+    text-decoration: none;
+}
+
+.footer-copy {
+    text-align: center;
+    font-size: 20px;
+    font-weight: 900;
+    justify-self: flex-end;
+}
+
+@media screen and (min-width: 768px) {
+    .nav-container {
+        display: flex
+    }
+
+    .titulo-principal {
+        margin-right: 30%;
+        color: #5656bb;
+        padding: 90px 0px 15px 0px;
+        font-size: 60px;
+        font-weight: 900;
+        text-shadow: 0px 0px 10px #5656bb;
+    }
+
+    .galeria-titulo {
+        margin-right: 30%;
+    }
+
+    .galeria-contenedor {
+        padding: 0px 60px;
+    }
+
+    .galeria-imagen:hover {
+        transform: scale(1.3);
+    }
+
+    .fondo > img {
+        display: block;
+    }
+
+    input label {
+        align-self: center;
+    }
+}
